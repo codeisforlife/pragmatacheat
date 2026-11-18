@@ -1,17 +1,20 @@
-"""
-Pragmata - Auto HP Scanner & Lock v3 (single-player, PC)
---------------------------------------------------------
-Alur v3 (lebih simpel):
-  1. Ketik angka darah yang kelihatan di layar (mis. 1200).
-     Script mencari angka itu sekaligus sebagai float, double, dan int.
-  2. Balik ke game, kena damage / heal sampai angka darah BERUBAH.
-  3. Balik ke CMD, ketik angka darah yang baru (mis. 1066).
-  4. Ulangi 2-3 sampai kandidat sedikit, lalu tes / kunci.
 
-Syarat: pip install pymem numpy  |  Python 64-bit  |  CMD sebagai Administrator.
-Tips: pakai mode Windowed / Borderless supaya game tidak pause saat alt-tab.
-Tombol saat lock: F1 = ON/OFF, F2 = kembali ke menu.
 """
+Pragmata - Auto HP Scanner & Lock v3 (Single-Player, PC)
+--------------------------------------------------------
+v3 Workflow (Simplified):
+  1. Enter the HP value displayed on the screen (e.g., 1200).
+     The script searches for that value as float, double, and int.
+  2. Return to the game and take damage or heal until your HP CHANGES.
+  3. Return to CMD and enter the new HP value (e.g., 1066).
+  4. Repeat steps 2-3 until only a few candidates remain,
+     then test or lock the value.
+
+Requirements: pip install pymem numpy | 64-bit Python | Run CMD as Administrator.
+Tip: Use Windowed or Borderless mode to prevent the game from pausing when Alt-Tabbing.
+Lock Controls: F1 = Toggle ON/OFF, F2 = Return to Menu.
+"""
+
 
 import ctypes
 import ctypes.wintypes as wt
